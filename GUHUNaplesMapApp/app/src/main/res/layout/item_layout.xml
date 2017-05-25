@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    >
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:text="Title This Test title adna dthe dsakjadlfka kljfakldjfaklsdj fklasdjfaksdjklasdjf "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"/>
+
+    <com.plusinfosys.guhunaples.widgets.SquareImageView
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="3dip"
+        android:src="@color/app_primary_color" />
+
+    <WebView
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="5dip"
+
+        android:text="Title This Test title adna dthe dsakjadlfka kljfakldjfaklsdj fklasdjfaksdjklasdjf "
+        android:textSize="13sp" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/txtDesc"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dip"
+    android:background="@drawable/backgroundimg"
+    android:padding="6dip">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+       android:layout_gravity="center"
+        android:gravity="center"
+      >
+
+        <ImageView
+            android:id="@+id/btnMapIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mapicon"
+             android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/btnGoogleIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/googleicon"
+            android:layout_marginLeft="8dip"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/btnWikiIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dip"
+            android:src="@drawable/wikipediaicon"
+            android:scaleType="fitXY"
+             />
+
+        <ImageView
+            android:id="@+id/btnReviewIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dip"
+            android:src="@drawable/reviewicon"
+            android:scaleType="fitXY"
+             />
+    </LinearLayout>
+</FrameLayout>
+</RelativeLayout>
+
+

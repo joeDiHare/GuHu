@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dip"
+            android:overScrollMode="never"
+            android:padding="10dip" />
+
+        <TextView
+            android:id="@+id/EmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="No Place Found"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+        <com.plusinfosys.guhunaples.widgets.SlidingDrawer xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/slide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:rotation="180"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:content="@+id/card_view"
+            app:handle="@+id/rope">
+
+            <FrameLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:rotation="180"
+              >
+
+
+            </FrameLayout>
+
+
+
+
+                <ImageView
+                    android:id="@+id/rope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:rotation="180"
+                    android:src="@drawable/rope1" />
+
+
+
+        </com.plusinfosys.guhunaples.widgets.SlidingDrawer>
+
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+              <FrameLayout
+                  android:id="@+id/mapviewLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="250dp">
+
+                  <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                      android:id="@+id/card_view"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      card_view:cardCornerRadius="6dp"
+                      card_view:cardElevation="10dp">
+
+                  </android.support.v7.widget.CardView>
+              </FrameLayout>
+
+              <ImageView
+                  android:id="@+id/rope"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/mapviewLayout"
+                  android:layout_marginRight="1dp"
+                  android:layout_marginTop="-20dp"
+                  android:src="@drawable/rope1" />
+          </RelativeLayout>-->
+    </FrameLayout>
+</LinearLayout>

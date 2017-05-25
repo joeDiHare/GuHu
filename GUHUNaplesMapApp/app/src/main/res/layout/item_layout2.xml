@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+      >
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:text="Title This Test title adna dthe dsakjadlfka kljfakldjfaklsdj fklasdjfaksdjklasdjf "
+            android:textSize="17sp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="3dip"
+            android:adjustViewBounds="true"
+            android:src="@color/app_primary_color" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+
+
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="8dip"
+            android:background="@drawable/backgroundimg"
+            android:padding="6dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btnMapIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mapicon"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/btnGoogleIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/googleicon" />
+
+                <ImageView
+                    android:id="@+id/btnWikiIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wikipediaicon" />
+
+                <ImageView
+                    android:id="@+id/btnReviewIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reviewicon" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+
+        android:singleLine="true"
+
+        android:text="Title This Test title adna dthe dsakjadlfka kljfakldjfaklsdj fklasdjfaksdjklasdjf "
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:background="#95FFFFFF"
+        android:textStyle="bold" />
+</FrameLayout>
+

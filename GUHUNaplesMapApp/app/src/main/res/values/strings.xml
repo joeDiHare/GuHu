@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GUHU Naples Map App</string>
+
+    <array name="section_list">
+        <item>Map</item>
+        <item>FOOD</item>
+        <item>SHOPS</item>
+        <item>VIEWS</item>
+        <item>FUN</item>
+        <item>PEOPLE</item>
+        <item>About</item>
+    </array>
+
+</resources>
